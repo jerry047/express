@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Registration</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <!-- Login Form -->
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="card shadow">
+                    <div class="card-title text-center border-bottom">
+                        <h2 class="p-3">Registration</h2>
+                    </div>
+                    <div class="card-body">
+                        <form method="POST" action="/users/create" enctype="application/x-www-form-urlencoded">
+                            <div class="mb-4">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" name="firstName" class="form-control" id="firstName" />
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" name="lastName" class="form-control" id="lastName" />
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="phoneNumber" class="form-label">Phone Number</label>
+                                <input type="number" name="phoneNumber" class="form-control" id="phoneNumber" />
+                            </div>
+
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary">Save</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
